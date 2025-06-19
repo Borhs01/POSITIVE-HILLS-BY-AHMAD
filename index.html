@@ -5,11 +5,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
+<!--             the link below is for the remixicon which display the whatsapp icon -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
         <title>Ahmad &mdash; your home, your freedom</title>
+<!--         this is custom css for the whattsapp icon and the pop up page for the google link -->
+        <style>
+         /* whatsapp icon style */
+        .whatsapp-icon{
+        font-size: 24px;
+        color: #B28451;
+        text-decoration: none;
+
+        }
+        /* CSS for the pop-up */
+        .popup-overlay {
+            margin-top: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Transparent background */
+            display: none; /* Hidden by default */
+            justify-content: center;
+            align-items: center;
+            z-index: 1000; /* Ensure it's on top */
+            backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background */
+        }
+
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            width: 90%; /* Adjust width as needed */
+            max-width: 700px; /* Max width for larger screens */
+            height: 80%; /* Adjust height as needed */
+            max-height: 600px; /* Max height for larger screens */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Hide overflow from iframe */
+        }
+
+        .popup-content iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+        }
+
+        /* Styles for the new "Exit" button */
+        .popup-exit-btn {
+            position: absolute; /* Position it relative to the popup-content */
+            top: 15px; /* Adjust top positioning as needed */
+            right: 20px; /* Adjust right positioning as needed */
+            padding: 8px 15px;
+            background-color: #f44336; /* Red background for exit */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none; /* In case it's an anchor tag */
+            transition: background-color 0.3s ease;
+            z-index: 1001; /* Ensure it's above the iframe */
+        }
+
+        .popup-exit-btn:hover {
+            background-color: #d32f2f; /* Darker red on hover */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .popup-content {
+                width: 95%;
+                height: 90%;
+                padding: 15px;
+            }
+            .popup-exit-btn {
+                font-size: 14px;
+                padding: 6px 12px;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    </style>
     </head>
     <body>
         <div class="navigationphone">
@@ -54,10 +138,12 @@
                 </ul>
             </div>
             <div class="header__sidebar__contact">
-                <span class="header__sidebar__contact--info">
-                    &phone; +2347065896598
-                </span>
-            </div>
+            <span class="header__sidebar__contact--info">
+                <a href="https://wa.me/2347061329623" class="whatsapp-icon" target="_blank">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </span>
+        </div>
         </div>
             
         <header class="main__header">
@@ -100,8 +186,8 @@
                         Connecting Dots, Building Empires
                     </h1>
                     <div class="header__button">
-                        <a class="header__btn" href="costom.html">book a call</a>
-                    </div>
+                    <a class="header__btn" href="#" id="bookACallBtn">book a call</a>
+                </div>
                 </div>
             </div>
             <div class="header__sidebar">
@@ -584,6 +670,40 @@
                 </div>
             </div>
         </footer>
+
+<!--         this div and the js code belong to the pop up google form. -->
+         <div class="popup-overlay" id="bookCallPopup">
+        <div class="popup-content">
+            <button class="popup-exit-btn" id="closePopupBtn">Exit</button>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScYXsUfB9Xu9ljJzjmXCQXNjPmLXEyNgK4T2uuFH3L2Wp7Aww/viewform?usp=header" title="Book a Call Form"></iframe>
+        </div>
+    </div>
         <script src="index.js"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookACallBtn = document.getElementById('bookACallBtn');
+            const bookCallPopup = document.getElementById('bookCallPopup');
+            const closePopupBtn = document.getElementById('closePopupBtn'); // Still uses this ID
+
+            // Open the pop-up
+            bookACallBtn.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                bookCallPopup.style.display = 'flex'; // Show the pop-up
+            });
+
+            // Close the pop-up when the "Exit" button is clicked
+            closePopupBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                bookCallPopup.style.display = 'none'; // Hide the pop-up
+            });
+
+            // Close the pop-up when clicking outside the content (on the overlay)
+            bookCallPopup.addEventListener('click', function(event) {
+                if (event.target === bookCallPopup) {
+                    bookCallPopup.style.display = 'none'; // Hide the pop-up
+                }
+            });
+        });
+    </script>
     </body>
 </html>
