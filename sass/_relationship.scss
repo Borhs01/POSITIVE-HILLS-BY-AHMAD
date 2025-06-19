@@ -1,0 +1,58 @@
+.section__relationship{
+    background-color: var(--color-grey-light-1);
+    padding: 1rem 0 6rem;
+}
+.section__member{
+    padding: 6rem 0 2rem;
+
+    &__heading{
+        font-size: 4rem;
+        font-weight: 900;
+        color: var(--color-secondary);
+        text-align: center;
+    }
+    &__tabs{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 4rem;
+    }
+    &__boxes{
+        background-color: var(--color-secondary);
+        padding: 2rem 7rem;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: var(--bp-largest)) {
+            padding: 3rem 2rem;
+        }
+        @media screen and (max-width: var(--bp-large)) {
+            padding: 3rem 2rem;
+        }
+        @media screen and (max-width: var(--bp-medium)) {
+            flex: 0 0 30%;
+            
+        }
+
+
+        &--images{
+            height: 15rem;
+            width: 15rem;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+}
+.section__partnership{
+     padding: 12rem 0 2rem;
+
+    &__heading{
+        font-size: 4rem;
+        font-weight: 900;
+        color: var(--color-secondary);
+        text-align: center;
+    }
+   
+}

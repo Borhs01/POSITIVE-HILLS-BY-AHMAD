@@ -1,0 +1,14 @@
+{
+  "name": "new-project-version-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "project:sass": "sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  }
+}

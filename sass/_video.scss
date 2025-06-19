@@ -1,0 +1,16 @@
+.section__video{
+    padding: 1rem 12rem 1rem;
+
+    @media screen and (max-width: var(--bp-small)) {
+        padding: 5rem 1rem 1rem;
+    }
+
+    &__tab{
+        margin-bottom: 0rem;
+
+        video.section__video__tab__video{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
