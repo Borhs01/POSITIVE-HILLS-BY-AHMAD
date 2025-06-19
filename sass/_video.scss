@@ -1,4 +1,5 @@
 .section__video{
+    
     padding: 1rem 12rem 1rem;
 
     @media screen and (max-width: var(--bp-small)) {
@@ -6,10 +7,14 @@
     }
 
     &__tab{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-bottom: 0rem;
 
         video.section__video__tab__video{
-            width: 100%;
+            width: 50%;
             height: auto;
         }
     }

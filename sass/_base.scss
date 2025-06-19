@@ -17,18 +17,18 @@
 --bp-largest: 75em; // 1200px
 }
 
-:root{
-    --bp-large: 62.5em; // 1000px
-}
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 53.25em; // 850px
 
+:root{--bp-large: 62.5em; // 1000px
+}
 :root{
     --bp-medium: 53.25em; // 850px
 }
-
 :root{
     --bp-small: 37.5em; // 600px
 }
-
 :root{
     --bp-smallest: 29em; // 464px
 }

@@ -24,3 +24,28 @@ document.querySelectorAll('.section__faqs__right--examples')[5].addEventListener
   const faqsText = document.querySelectorAll('.faqs__text')[5];
   faqsText.style.display = faqsText.style.display === 'block' ? 'none' : 'block';
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const bookACallBtn = document.getElementById('bookACallBtn');
+  const bookCallPopup = document.getElementById('bookCallPopup');
+  const closePopupBtn = document.getElementById('closePopupBtn'); // Still uses this ID
+
+  // Open the pop-up
+  bookACallBtn.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default link behavior
+      bookCallPopup.style.display = 'flex'; // Show the pop-up
+  });
+
+  // Close the pop-up when the "Exit" button is clicked
+  closePopupBtn.addEventListener('click', function(event) {
+      event.preventDefault();
+      bookCallPopup.style.display = 'none'; // Hide the pop-up
+  });
+
+  // Close the pop-up when clicking outside the content (on the overlay)
+  bookCallPopup.addEventListener('click', function(event) {
+      if (event.target === bookCallPopup) {
+          bookCallPopup.style.display = 'none'; // Hide the pop-up
+      }
+  });
+});
