@@ -103,6 +103,10 @@
             font-size: 1.5rem;
             
         }
+         @media screen and (max-width: 53.25em) {
+            padding: 1rem 5rem;
+            font-size: .8rem;
+        }
 
             &:hover{
                 background-color: var(--color-primary-dark);

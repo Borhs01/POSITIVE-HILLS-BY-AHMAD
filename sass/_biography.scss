@@ -3,8 +3,11 @@
     padding: 0rem 4rem 0rem;
 
     @media screen and (max-width: 75em) {
-           flex-direction: column;
-        }
+        flex-direction: column;
+    }
+    @media screen and (max-width: 62.5em) {
+        padding: 0rem 0rem 0rem
+    }
 }
 .bio{
 
@@ -22,13 +25,23 @@
         }
         @media screen and (max-width: 53.25em) {
               flex-direction: column;
+              margin-right: 0rem;
         }
+
+        
 
         &--img{
             height: 38rem;
             width: 38rem;
             border-radius: 50%;
+
+            @media screen and (max-width: 29em) {
+                height: 28rem;
+                width: 28rem;
+                border-radius: 50%;
+            }
         }
+
         &--description{
             padding-left: 4rem;
 
@@ -38,6 +51,7 @@
         @media screen and (max-width: 53.25em) {
              padding-top: 0rem;
              text-align: center;
+             padding-left: 0rem;
         }
 
         }

@@ -135,6 +135,11 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 62.5em) {
+  .section__bio {
+    padding: 0rem 0rem 0rem;
+  }
+}
 
 .bio__left {
   flex: 0 0 60%;
@@ -153,12 +158,20 @@ body {
 @media screen and (max-width: 53.25em) {
   .bio__left {
     flex-direction: column;
+    margin-right: 0rem;
   }
 }
 .bio__left--img {
   height: 38rem;
   width: 38rem;
   border-radius: 50%;
+}
+@media screen and (max-width: 29em) {
+  .bio__left--img {
+    height: 28rem;
+    width: 28rem;
+    border-radius: 50%;
+  }
 }
 .bio__left--description {
   padding-left: 4rem;
@@ -172,6 +185,7 @@ body {
   .bio__left--description {
     padding-top: 0rem;
     text-align: center;
+    padding-left: 0rem;
   }
 }
 .bio__left--heading {
@@ -316,7 +330,7 @@ body {
 }
 @media screen and (max-width: 37.5em) {
   .header__content {
-    margin: 20rem 10rem;
+    margin: 25rem 10rem;
   }
 }
 .header__sidebar {
@@ -513,7 +527,7 @@ body {
 }
 @media screen and (max-width: 37.5em) {
   .social {
-    top: 35%;
+    top: 45%;
   }
 }
 
@@ -964,6 +978,12 @@ body {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 53.25em) {
+  .section__membership__content--btn1 {
+    padding: 1rem 5rem;
+    font-size: 0.8rem;
+  }
+}
 .section__membership__content--btn1:hover {
   background-color: var(--color-primary-dark);
   color: var(--color-grey-light-1);
@@ -1239,7 +1259,7 @@ body {
 @media screen and (max-width: 29em) {
   .section__brief {
     padding: 2rem 0rem;
-    margin: 1rem 4rem 0rem;
+    margin: 1rem 1rem 0rem;
   }
 }
 .section__brief__logo--image {
@@ -1371,8 +1391,8 @@ body {
 }
 @media screen and (max-width: 29em) {
   .section__brief__mail--button {
-    padding: 0.8rem 1rem;
-    font-size: 1rem;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.7rem;
   }
 }
 .section__brief__mail--button:hover {
@@ -1436,6 +1456,11 @@ body {
   font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 29em) {
+  .connect__joinUs {
+    font-size: 1.1rem;
+  }
 }
 .connect__bookCall {
   flex: 50%;
