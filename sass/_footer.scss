@@ -2,7 +2,7 @@
     background-color: var(--color-secondary);
     padding: 6rem 4rem;
 
-    @media screen and (max-width: var(--bp-medium)) {
+    @media screen and (max-width: 53.25em) {
         padding: 4rem 2rem;
     }
 
@@ -10,14 +10,14 @@
         display: flex;
         border-bottom: 1px solid var(--color-grey-light-2);
 
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             flex-direction: column;
         }
 
         &--left{
             flex: 0 0 50%;
 
-            @media screen and (max-width: var(--bp-smallest)){
+            @media screen and (max-width: 29em){
                 text-align: center;
             }
         }
@@ -26,7 +26,7 @@
             height: 8rem;
             margin-bottom: 3rem;
 
-            @media screen and (max-width: var(--bp-small)) {
+            @media screen and (max-width: 37.5em) {
                 width: 10rem;
                 height: 4rem;
                 margin-bottom: 1rem;
@@ -39,17 +39,17 @@
             margin-bottom: 2rem;
             padding-right: 20rem;
 
-            @media screen and (max-width: var(--bp-medium)) {
+            @media screen and (max-width: 53.25em) {
                 font-size: 1.4rem;
             }
-            @media screen and (max-width: var(--bp-largest)){
+            @media screen and (max-width: 75em){
                 padding-right: 0rem;    
             }
         }
         &--logos{
             margin-bottom: 2rem;
 
-            @media screen and (max-width: var(--bp-small)) {
+            @media screen and (max-width: 37.5em) {
                 margin-bottom: 1rem;
             }
         }
@@ -57,7 +57,7 @@
             flex: 1;
             text-align: left;
 
-            @media screen and (max-width: var(--bp-smallest)){
+            @media screen and (max-width: 29em){
                 text-align: center;
             }
         }
@@ -67,10 +67,10 @@
             font-weight: 600;
             margin-bottom: 3rem;
 
-            @media screen and (max-width: var(--bp-medium)) {
+            @media screen and (max-width: 53.25em) {
                 font-size: 1.8rem;
             }
-            @media screen and (max-width: var(--bp-small)) {
+            @media screen and (max-width: 37.5em) {
                 margin-bottom: 1rem;
             }
         }
@@ -78,7 +78,7 @@
             flex: 1;
             text-align: right;
 
-            @media screen and (max-width: var(--bp-largest)){
+            @media screen and (max-width: 75em){
                 text-align: center;
             }
         }
@@ -87,7 +87,7 @@
             padding-bottom: 4rem;
             border-bottom: 1px solid var(--color-grey-light-2);
 
-            @media screen and (max-width: var(--bp-small)) {
+            @media screen and (max-width: 37.5em) {
                 margin-bottom: 2rem;
                 padding-bottom: 2rem;
             }
@@ -96,7 +96,7 @@
         &__right2{
             margin-bottom: 2rem;
 
-            @media screen and (max-width: var(--bp-small)) {
+            @media screen and (max-width: 37.5em) {
                 margin-bottom: 1rem;
             }
         }
@@ -106,7 +106,7 @@
             font-weight: 600;
             margin-bottom: 1rem;
 
-            @media screen and (max-width: var(--bp-medium)) {
+            @media screen and (max-width: 53.25em) {
                 font-size: 1.9rem;
             }
         }
@@ -115,7 +115,7 @@
             color: var(--color-grey-light-1);
             font-weight: 600;
 
-            @media screen and (max-width: var(--bp-medium)) {
+            @media screen and (max-width: 53.25em) {
                 font-size: 1.3rem;
             }
         }
@@ -129,7 +129,7 @@
         font-size: 1.4rem;
         color: var(--color-grey-light-2);
 
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             flex-direction: column;
         }
 
@@ -137,7 +137,7 @@
             flex: 0 0 50%;
             text-align: left;
 
-            @media screen and (max-width: var(--bp-smallest)){
+            @media screen and (max-width: 29em){
                 text-align: center;
             }
         }
@@ -145,7 +145,7 @@
             flex: 1;
             text-align: right;
 
-            @media screen and (max-width: var(--bp-smallest)){
+            @media screen and (max-width: 29em){
                 text-align: center;
             }
         }

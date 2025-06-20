@@ -8,14 +8,14 @@
     align-items: center;
     justify-content: space-between;
 
-     @media screen and (max-width: var(--bp-small)) {
+     @media screen and (max-width: 37.5em) {
         flex-direction: column;
     }
 }
 .section__sponsorship{
     padding: 0rem 4rem 1rem;
 
-    @media screen and (max-width: var(--bp-smallest)) {
+    @media screen and (max-width: 29em) {
         padding: 0rem 1rem 4rem;
     }
 
@@ -25,7 +25,7 @@
         flex: 0 0 23%;
         align-self: stretch;
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 62.5em) {
             flex: 0 0 48%;
             margin-bottom: 4rem;
         }
@@ -43,7 +43,7 @@
         font-size: 3.5rem;
         font-weight: 900;
 
-        @media screen and (max-width: var(--bp-largest)) {
+        @media screen and (max-width: 75em) {
             font-size: 2.8rem;
             
         }
@@ -52,7 +52,7 @@
         font-size: 2.3rem;
         padding: 1rem 0;
 
-        @media screen and (max-width: var(--bp-largest)) {
+        @media screen and (max-width: 75em) {
             font-size: 1.6rem;
             
         }
@@ -61,7 +61,7 @@
         font-size: 1.6rem;
         line-height: 1.6;
 
-        @media screen and (max-width: var(--bp-largest)) {
+        @media screen and (max-width: 75em) {
             font-size: 1.3rem;
             
         }

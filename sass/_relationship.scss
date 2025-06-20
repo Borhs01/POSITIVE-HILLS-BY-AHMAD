@@ -24,13 +24,13 @@
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         margin-bottom: 2rem;
 
-        @media screen and (max-width: var(--bp-largest)) {
+        @media screen and (max-width: 75em) {
             padding: 3rem 2rem;
         }
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 62.5em) {
             padding: 3rem 2rem;
         }
-        @media screen and (max-width: var(--bp-medium)) {
+        @media screen and (max-width: 53.25em) {
             flex: 0 0 30%;
             
         }

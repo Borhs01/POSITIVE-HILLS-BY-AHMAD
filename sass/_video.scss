@@ -2,7 +2,7 @@
     
     padding: 1rem 12rem 1rem;
 
-    @media screen and (max-width: var(--bp-small)) {
+    @media screen and (max-width: 37.5em) {
         padding: 5rem 1rem 1rem;
     }
 
@@ -14,7 +14,7 @@
         margin-bottom: 0rem;
 
         video.section__video__tab__video{
-            width: 50%;
+            width: 70%;
             height: auto;
         }
     }

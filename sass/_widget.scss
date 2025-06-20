@@ -9,11 +9,12 @@
     justify-content: center;
     align-items: stretch;
 
-    @media screen and (max-width: var(--bp-small)) {
-            flex-direction: column;
-            align-items: center;
+    @media screen and (max-width: 700px) {  // 700 px
+      flex-direction: column;          // put items one under another
+      align-items: center;             // keep them centred horizontally
+    }
 
-        }
+    
     &__h{
         text-align: center;
         font-size: 3rem;
@@ -31,15 +32,18 @@
         text-align: justify;
         background-color: var(--color-grey-light-1);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-        @media screen and (max-width: var(--bp-large)) {
+
+        @media screen and (max-width: 62.5em) {
             flex: 0 0 35%;
-            
         }
-        
-
-
+        @media screen and (max-width: 700px) {  // 700 px
+          flex: 0 0 90%;
+          max-width: 90%;
+          width: 90%; // ✅ ADD THIS LINE    // optional: leave a little breathing space
+        }
+      
         &:hover{
-        transform: scale(1.01);
+            transform: scale(1.01);
             transition: all 0.2s ease-in-out;
         }
     

@@ -6,7 +6,7 @@
         display: none;
     }
 
-   @media screen and (max-width: var(--bp-medium)) {
+   @media screen and (max-width: 53.25em) {
        display: block;
    }
 
@@ -22,7 +22,7 @@
         text-align: center;
         cursor: pointer;
 
-         @media screen and (max-width: var(--bp-small)) {
+         @media screen and (max-width: 37.5em) {
             top: 1.3rem;
         }
 
@@ -44,7 +44,7 @@
         }
         
 
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             top: 1.8rem;
             right: 2.5rem;
         }

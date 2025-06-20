@@ -3,7 +3,7 @@
     display: flex;
 
 
-    @media screen and (max-width: var(--bp-small)) {
+    @media screen and (max-width: 62.5em) {
            flex-direction: column;
     }
 
@@ -23,11 +23,14 @@
     &__content{
         margin: 20rem 12rem;
 
-        @media screen and (max-width: var(--bp-small)) {
-            margin: 25rem 3rem;
+        @media screen and (max-width: 62.5em) {
+            margin: 25rem 25rem;
         }
-        @media screen and (max-width: var(--bp-smallest)) {
-            margin: 32rem 3rem;
+        @media screen and (max-width: 43.75em) {
+            margin: 25rem 10rem;
+        }
+        @media screen and (max-width: 37.5em) {
+            margin: 20rem 10rem;
         }
     }
     &__sidebar{
@@ -37,7 +40,7 @@
          //padding-top: 10rem;
         background-color: var(--color-secondary);
 
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
            background-color: var(--color-secondary);
             
         }
@@ -45,13 +48,14 @@
         font-size: 1.8rem;
         color: var(--color-grey-light-1);
         font-weight: 600;
+        text-align: justify;
 
         &:not(:last-child){
             margin-bottom: 2rem;
         }
         
     }
-    @media screen and (max-width: var(--bp-smallest)) {
+    @media screen and (max-width: 37.5em) {
             padding: 3rem 3rem;
            padding-left: 4rem;
     }
@@ -62,10 +66,10 @@
             padding: 1.5rem 3rem;
             border-radius: 2rem;
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             margin-right: 7rem; 
         }
-         @media screen and (max-width: var(--bp-small)) {
+         @media screen and (max-width: 37.5em) {
             display: none;
         }
             
@@ -88,10 +92,10 @@
         font-weight: 900;
         color: var(--color-grey-light-1);
         
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             font-size: 4.5rem;
         }
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             color: var(--color-primary);
         }
     }
@@ -102,7 +106,7 @@
         font-weight: 600;
         margin-bottom: 1rem;
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             font-size: 1.6rem;
             
         }
@@ -113,11 +117,11 @@
         font-weight: 600;
         margin-bottom: 4rem;
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             font-size: 2rem;
             
         }
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             font-size: 1.6rem;
             
         }
@@ -138,7 +142,7 @@
         transition: all 0.3s ease-in-out;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             padding: 1.5rem 4rem;
             font-size: 1.6rem;
             
@@ -156,7 +160,7 @@
         width: 12rem;
         //height: 5rem;
 
-        @media screen and (max-width: var(--bp-small)) {
+        @media screen and (max-width: 37.5em) {
             margin-left: 2rem;
             width: 4rem;
         }
@@ -169,7 +173,7 @@
         padding: .8rem 3rem;
         border-radius: 2rem;
 
-        @media screen and (max-width: var(--bp-medium)) {
+        @media screen and (max-width: 53.25em) {
             display: none;
             
         }
@@ -183,7 +187,7 @@
         &__item{
             margin-right: 3rem;
 
-        @media screen and (max-width: var(--bp-large)) {
+        @media screen and (max-width: 75em) {
             margin-right: 1.5rem;
             
         }
@@ -220,6 +224,12 @@
   position: absolute;
   top: 60%;
   left: 2%;
+   @media screen and (max-width: 62.5em) {
+           top: 40%;
+        }
+    @media screen and (max-width: 37.5em) {
+        top: 35%;
+    }
 }
 
 .social__box {
