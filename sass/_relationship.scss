@@ -17,6 +17,10 @@
         align-items: center;
         justify-content: space-around;
         padding: 1rem 4rem;
+
+        @media screen and (max-width: 29em) {
+            flex-direction: column;
+        }
     }
     &__boxes{
         background-color: var(--color-secondary);
@@ -32,6 +36,7 @@
         }
         @media screen and (max-width: 53.25em) {
             flex: 0 0 30%;
+            margin-right: 2rem;
             
         }
 

@@ -58,6 +58,7 @@
             flex: 1;
             margin-right: 4rem;
             padding: 3rem;
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08), 0 1.5rem 4rem rgba(0, 0, 0, 0.06);
 
         @media screen and (max-width: 53.25em) {
              margin-right: 0;
@@ -70,6 +71,7 @@
             flex: 1;
             padding: 3rem;
             background-color: var(--color-grey-light-1);
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08), 0 1.5rem 4rem rgba(0, 0, 0, 0.06);
 
             
             

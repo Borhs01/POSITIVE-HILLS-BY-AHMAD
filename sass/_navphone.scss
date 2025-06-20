@@ -18,7 +18,7 @@
         top: 2.5rem;
         right: 2rem;
         background-color: #fff;
-        z-index: 4000;
+        z-index: 400000;
         text-align: center;
         cursor: pointer;
 
@@ -37,11 +37,8 @@
         right: 2rem;
         background-color: rgba(var(--color-primary, 0.9)); 
         box-shadow: 0 .4rem .6rem rgba(var(--color-black, 0.1));
-        & {
-            z-index: 2000;
-            transition: transform .3s;
-            //transform: scale(20);
-        }
+         z-index: 200000;
+        transition: transform .3s;
         
 
         @media screen and (max-width: 37.5em) {
@@ -54,7 +51,7 @@
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 3000;
+        z-index: 300000;
 
         opacity: 0;
         width: 0;

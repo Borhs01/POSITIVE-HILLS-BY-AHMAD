@@ -88,6 +88,11 @@ body {
   justify-content: space-around;
   padding: 1rem 4rem;
 }
+@media screen and (max-width: 29em) {
+  .section__member__tabs {
+    flex-direction: column;
+  }
+}
 .section__member__boxes {
   background-color: var(--color-secondary);
   padding: 2rem 7rem;
@@ -107,6 +112,7 @@ body {
 @media screen and (max-width: 53.25em) {
   .section__member__boxes {
     flex: 0 0 30%;
+    margin-right: 2rem;
   }
 }
 .section__member__boxes--images {
@@ -462,7 +468,7 @@ body {
 @media screen and (max-width: 37.5em) {
   .header__logo__image {
     margin-left: 2rem;
-    width: 4rem;
+    width: 9rem;
   }
 }
 .header__nav {
@@ -679,7 +685,6 @@ body {
   align-items: stretch;
   margin: 2.2rem;
   padding: 2rem 2rem;
-  text-align: justify;
   background-color: var(--color-grey-light-1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -818,7 +823,7 @@ body {
   transition: all 0.3s ease-in-out;
   border-radius: 0.5rem;
   cursor: pointer;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
 }
 .section__faqs__right--examples:not(:last-child) {
   margin-bottom: 2rem;
@@ -938,6 +943,7 @@ body {
   flex: 1;
   margin-right: 4rem;
   padding: 3rem;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08), 0 1.5rem 4rem rgba(0, 0, 0, 0.06);
 }
 @media screen and (max-width: 53.25em) {
   .section__membership__content__left {
@@ -949,6 +955,7 @@ body {
   flex: 1;
   padding: 3rem;
   background-color: var(--color-grey-light-1);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.08), 0 1.5rem 4rem rgba(0, 0, 0, 0.06);
 }
 .section__membership__content__right:not(:last-child) {
   margin-right: 4rem;
@@ -1485,7 +1492,7 @@ body {
   top: 2.5rem;
   right: 2rem;
   background-color: #fff;
-  z-index: 4000;
+  z-index: 400000;
   text-align: center;
   cursor: pointer;
 }
@@ -1503,9 +1510,7 @@ body {
   right: 2rem;
   background-color: rgba(var(--color-primary, 0.9));
   box-shadow: 0 0.4rem 0.6rem rgba(var(--color-black, 0.1));
-}
-.navigationphone__background {
-  z-index: 2000;
+  z-index: 200000;
   transition: transform 0.3s;
 }
 @media screen and (max-width: 37.5em) {
@@ -1519,7 +1524,7 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 3000;
+  z-index: 300000;
   opacity: 0;
   width: 0;
   transition: all 0.3;
